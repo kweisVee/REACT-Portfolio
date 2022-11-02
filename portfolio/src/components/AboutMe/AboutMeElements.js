@@ -5,18 +5,24 @@ export const AboutMeContainer = styled.div`
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
     height: 90vh;
+    /* height: 100%; */
     width: 100%;
     padding: 0px 200px;
     font-weight: 150;
 
-    @media screen and (max-width: 770px) {
-        flex-direction: 100%;
-        padding: 0px 40px;
+    @media screen and (max-width: 912px) {
+        padding: 30px 40px;
+        height: 95vh;
     }
 
-    @media screen and (max-width: 280px) {
-        padding: 0px 0px;
+    @media screen and (max-width: 414px) {
+        height: 91vh;
     }
+
+    @media screen and (max-width: 375px) {
+        height: 89vh;
+        padding: 0px 0px;
+    } 
 `
 
 export const AboutMeTop = styled.div`
@@ -29,7 +35,7 @@ export const AboutMeTopFirst = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: row;
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 912px) {
         flex-direction: column;
         justify-content: initial;
         gap: 10px;
@@ -54,15 +60,25 @@ export const AboutMeImgBorder = styled.div`
     border: 3px solid #fff;
     align-items: center;
 
+    @media screen and (max-width: 912px) {
+        height: 340px;
+        width: 330px;
+    }
+
     @media screen and (max-width: 688px) {
         height: 240px;
         width: 230px;
     }
 
-    @media screen and (max-width: 280px) {
-        /* padding: 14px; */
+    @media screen and (max-width: 414px) {
         height: 210px;
         width: 200px;
+        border: 3px solid #fff;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 190px;
+        width: 180px;
         border: 3px solid #fff;
     }
 `
@@ -73,14 +89,24 @@ export const AboutMeImage = styled.img`
     border-radius: 50%;
     /* align-self: center; */
 
+    @media screen and (max-width: 912px) {
+        height: 310px;
+        width: 300px;
+    }
+
     @media screen and (max-width: 688px) {
         height: 210px;
         width: 200px;
     }
 
-    @media screen and (max-width: 280px) {
+    @media screen and (max-width: 414px) {
         height: 180px;
         width: 170px;
+    }
+
+    @media screen and (max-width: 375px) {
+        height: 160px;
+        width: 150px;
     }
 `
 
@@ -89,11 +115,16 @@ export const AboutMeIntroContainer = styled.div`
     flex-direction: column;
     color: #fff;
     font-size: 220%;
+
+    @media screen and (max-width: 912px) {
+        font-size: 290%
+    }
+
     @media screen and (max-width: 688px) {
         font-size: 180%;
     }
 
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 414px) {
         font-size: 150%;
     }
 
@@ -114,21 +145,24 @@ export const AboutMeBottom = styled.div`
     text-align: right;
     justify-content: center;
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 912px) {
         margin-top: 50px;
-        /* text-align: center;
-        flex-direction: row; */
+        font-size: 30px;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 414px) {
         margin-top: 20px;
-        /* text-align: center;
-        flex-direction: row; */
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 375px) {
+        margin-top: 20px;
+        font-size: 15px;
     }
 `
 export const AboutMeBottomTempContainer = styled.div`
     flex-grow: 3;
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 912px) {
         flex-grow: 0;
     }
 `
@@ -141,11 +175,21 @@ export const AboutMeBottomRight = styled.div`
     gap: 50px;
     flex-grow: 1;
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 912px) {
+        /* margin-top: 10px;
+        text-align: center; */
         margin-top: 10px;
         text-align: center;
         flex-direction: column;
+        padding-bottom: 10px;
     }
+
+    /* @media screen and (max-width: 688px) {
+        margin-top: 10px;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 10px;
+    } */
 `
 export const AboutMePhoneInfo = styled.div`
     display: flex;

@@ -6,6 +6,7 @@ export const Nav = styled.nav`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
+    /* background: #f7b26d; */
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
@@ -15,6 +16,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
@@ -72,6 +74,9 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    &:hover {
+        /* border-bottom: 3px solid #3f5371; */
+    }
 `
 
 export const NavLinks = styled(LinkS)`
@@ -84,7 +89,12 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     /* border-bottom: 3px solid #3f5371; */
 
-    &.active {
-        border-bottom: 3px solid #3f5371;
+    &:active {
+        /* border-bottom: 3px solid #3f5371; */
+        background-color: #3f5371;
     }
+
+    /* &:hover {
+        border-bottom: 3px solid #3f5371;
+    } */
 `

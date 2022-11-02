@@ -80,3 +80,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### install styled components
 
 `npm install styled-components`
+
+### install react-scroll 
+
+`npm install react-scroll`
+
+### install react-icons 
+
+`npm install react-icons`
