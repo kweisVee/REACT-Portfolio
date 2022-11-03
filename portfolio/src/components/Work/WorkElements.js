@@ -2,11 +2,13 @@ import styled from 'styled-components'
 
 export const WorkContainer = styled.div`
     font-family: 'Montserrat', sans-serif;
-    background: #3F5371;
+    /* background: #3F5371; */
+    background: #d59c6e;
     /* height: 100vh; */
     display: flex;
     flex-direction: column;
-    color: #F2E5D9;
+    /* color: #F2E5D9; */
+    color: #5f4123;
     justify-content: center;
     padding: 40px 0px;
 `
@@ -27,10 +29,11 @@ export const WorkExperienceImageDetailsContainer = styled.div`
 `
 
 export const WorkExperienceTitle = styled.div`
-    /* background: #F2E5D9; */
+    background: #F2E5D9;
     /* background: #E0E1DD; */
-    background: #F5F8f9;
-    color: #3F5371;
+    /* background: #F5F8f9; */
+    /* color: #3F5371; */
+    color: #5f4123;
     font-weight: 700;
     padding: 0px 40px;
     border-radius: 10px 0px 0px 10px;
@@ -72,6 +75,7 @@ export const WorkDetailsContainer = styled.div`
 export const WorkDetailsCompanyName = styled.div``
 export const WorkDetailsRole = styled.div`
     font-size: 20px;
+    color: white;
 `
 
 export const WorkDetailsList = styled.ul`
