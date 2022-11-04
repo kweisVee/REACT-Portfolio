@@ -8,6 +8,15 @@ export const ContactContainer = styled.div`
     align-items: center;
     padding: 180px 30px;
     /* height: 80vh; */
+    @media screen and (max-width: 970px) {
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 30px;
+    }
+
+    @media screen and (max-width: 540px) {
+        padding: 100px 10px;
+    }
 `
 export const ContactTitleContainer = styled.div`
     display: flex;
@@ -20,16 +29,21 @@ export const ContactMeTitle = styled.h2``
 export const ContactH5 = styled.h5``
 
 export const ContactFormContainer = styled.form`
-    /* background-color: #ebccab; */
     background-color: white;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
-    /* height: 400px; */
     width: 45%;
     flex-direction: column;
     border-radius: 20px;
     gap: 20px;
+    @media screen and (max-width: 970px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 540px) {
+        width: 80%;
+    }
 `
 
 export const ContactFormNameContainer = styled.div`

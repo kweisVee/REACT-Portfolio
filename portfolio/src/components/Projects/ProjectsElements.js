@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import backgroundImg from '../../images/background.jpg'
+// import backgroundImg from '../../images/background.jpg'
 
 export const ProjectsContainer = styled.div`
    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
@@ -11,9 +11,6 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     background: #F2E5D9;
-    /* background-image: url(${backgroundImg});
-    background-repeat: no-repeat; */
-    /* background: #de5542; */
     padding: 40px 30px;
 
     /* padding: 100px 200px; */
