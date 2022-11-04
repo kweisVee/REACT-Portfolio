@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.div`
    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%; 
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ export const ProjectsContainer = styled.div`
     padding: 40px 30px;
 
     /* padding: 100px 200px; */
-    @media screen and (max-width: 1080px) {
+    /* @media screen and (max-width: 1080px) {
         height: 108vh;
     }
 
@@ -36,7 +36,7 @@ export const ProjectsContainer = styled.div`
 
     @media screen and (max-width: 280px) {
         height: 260vh;
-    }
+    } */
 `
 
 export const ProjectsTitleContainer = styled.div``

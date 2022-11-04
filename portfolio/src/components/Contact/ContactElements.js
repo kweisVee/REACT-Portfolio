@@ -66,7 +66,7 @@ export const ContactFirstNameInput = styled.input`
 export const ContactLastNameInput = styled.input`
     border: 0;
     outline: 0;
-    width: 180px;
+    /* width: 180px; */
     padding-bottom: 5px;
     border-bottom: 1.5px solid #877f7d;
     width: 100%;

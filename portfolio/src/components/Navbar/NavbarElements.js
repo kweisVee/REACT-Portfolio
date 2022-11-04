@@ -6,6 +6,7 @@ export const Nav = styled.nav`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
+    /* background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')} */
     /* background: #f7b26d; */
     height: 80px;
     /* margin-top: -80px; */

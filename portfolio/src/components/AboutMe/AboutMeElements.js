@@ -4,23 +4,23 @@ export const AboutMeContainer = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
-    height: 90vh;
+    /* height: 90vh; */
     /* height: 100%; */
     width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 0px 200px;
     font-weight: 150;
+    height: 100%;
+    padding: 80px 200px 140px 100px;
 
     @media screen and (max-width: 912px) {
         padding: 30px 40px;
-        height: 95vh;
-    }
-
-    @media screen and (max-width: 414px) {
-        height: 91vh;
+        /* height: 95vh; */
     }
 
     @media screen and (max-width: 375px) {
-        height: 89vh;
+        /* height: 89vh; */
         padding: 0px 0px;
     } 
 `
@@ -60,21 +60,21 @@ export const AboutMeImgBorder = styled.div`
     border: 3px solid #fff;
     align-items: center;
 
-    @media screen and (max-width: 912px) {
-        height: 340px;
-        width: 330px;
-    }
+    /* @media screen and (max-width: 912px) {
+        height: 310px;
+        width: 300px;
+    } */
 
-    @media screen and (max-width: 688px) {
+    @media screen and (max-width: 912px) {
         height: 240px;
         width: 230px;
     }
 
-    @media screen and (max-width: 414px) {
+    /* @media screen and (max-width: 414px) {
         height: 210px;
         width: 200px;
         border: 3px solid #fff;
-    }
+    } */
 
     @media screen and (max-width: 375px) {
         height: 190px;
@@ -89,20 +89,20 @@ export const AboutMeImage = styled.img`
     border-radius: 50%;
     /* align-self: center; */
 
-    @media screen and (max-width: 912px) {
-        height: 310px;
-        width: 300px;
-    }
+    /* @media screen and (max-width: 912px) {
+        height: 280px;
+        width: 270px;
+    } */
 
-    @media screen and (max-width: 688px) {
+    @media screen and (max-width: 912px) {
         height: 210px;
         width: 200px;
     }
 
-    @media screen and (max-width: 414px) {
+    /* @media screen and (max-width: 414px) {
         height: 180px;
         width: 170px;
-    }
+    } */
 
     @media screen and (max-width: 375px) {
         height: 160px;
@@ -117,7 +117,7 @@ export const AboutMeIntroContainer = styled.div`
     font-size: 220%;
 
     @media screen and (max-width: 912px) {
-        font-size: 290%
+        font-size: 200%
     }
 
     @media screen and (max-width: 688px) {
@@ -147,7 +147,7 @@ export const AboutMeBottom = styled.div`
 
     @media screen and (max-width: 912px) {
         margin-top: 50px;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     @media screen and (max-width: 414px) {

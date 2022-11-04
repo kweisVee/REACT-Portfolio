@@ -20,7 +20,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         try{
-            emailjs.sendForm('service_dvo1lhj', 'template_as2b6oa', form.current, 'qgzLD6rblIxe4G_qq')
+            emailjs.sendForm('service_dvo1lhk', 'template_as2b6ob', form.current, '5WQ0gQU8qrIpI2E7o')
             .then((result) => {
               console.log(result.text);
             }, (error) => {
@@ -50,7 +50,6 @@ const Contact = () => {
                 <ContactMessageInput placeholder='Write your message...' name='message'></ContactMessageInput>
                 <ContactMessageButton type='submit' value='send'>Send Message</ContactMessageButton>
             </ContactFormContainer>
-            {/* </form> */}
         </ContactContainer>
     )
 }
