@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa'
+import { animateScroll as scroll } from 'react-scroll'
 import {
     Nav,
     NavbarContainer,
@@ -21,25 +22,57 @@ const Navbar = ({ toggle }) => {
         }
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
-        <Nav>
+        <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/">KOREKWEIS</NavLogo>
+                <NavLogo to="/" onClick={toggleHome}>KOREKWEIS</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about">About Me</NavLinks>
+                        <NavLinks to="about"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >About Me</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="projects">Projects</NavLinks>
+                        <NavLinks to="projects"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Projects</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="work">Work & Education</NavLinks>
+                        <NavLinks to="resume"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Work & Education</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="message">Message</NavLinks>
+                        <NavLinks to="contact"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >Message</NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

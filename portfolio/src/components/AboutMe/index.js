@@ -24,7 +24,7 @@ import {
 
 const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
     return (
-        <AboutMeContainer>
+        <AboutMeContainer id="about">
             <AboutMeTop>
                 <AboutMeTopFirst>
                     <AboutMeImgContainer>

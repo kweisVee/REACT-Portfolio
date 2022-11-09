@@ -28,7 +28,7 @@ const Projects = () => {
 
     return (
         // check 2:34:20 for the id
-        <ProjectsContainer>
+        <ProjectsContainer id="projects">
             <ProjectsTitleContainer>
                 <ProjectsTitle>My Projects</ProjectsTitle>
                 <ProjectsWrapper>

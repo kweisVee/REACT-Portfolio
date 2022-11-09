@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
-    /* background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')} */
+    /* background: ${({ scrollNav }) => (scrollNav ? '#F2E5D9' : '#de5542')}; */
     /* background: #f7b26d; */
     height: 80px;
     /* margin-top: -80px; */
@@ -90,10 +90,10 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     /* border-bottom: 3px solid #3f5371; */
 
-    &:active {
+    &.active {
         /* border-bottom: 3px solid #3f5371; */
         background-color: #3f5371;
-    }
+    } 
 
     /* &:hover {
         border-bottom: 3px solid #3f5371;

@@ -32,7 +32,7 @@ const Contact = () => {
         e.target.reset()
     };
     return (
-        <ContactContainer>
+        <ContactContainer id="contact">
             <ContactTitleContainer>
                 <ContactMeTitle>
                     CONTACT

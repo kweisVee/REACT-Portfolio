@@ -23,7 +23,7 @@ import {
 
 const Resume = () => {
   return (
-    <ResumeContainer>
+    <ResumeContainer id="resume">
         {/* <ResumeTitle>
             <em>RESUME</em>
         </ResumeTitle> */}
