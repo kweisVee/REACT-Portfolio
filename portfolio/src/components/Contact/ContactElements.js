@@ -49,6 +49,10 @@ export const ContactFormNameContainer = styled.div`
     display: flex;
     gap: 20px;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 320px) {
+        flex-direction: column;
+    }
 `
 export const ContactFirstNameInput = styled.input`
     border: 0;

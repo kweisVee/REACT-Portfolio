@@ -25,22 +25,15 @@ export const ResumeBodyContainer = styled.div`
     @media screen and (max-width: 1024px) {
         flex-direction: column;
     }
-    /* height: 100vh; */
 `
 export const ResumeImageContainer = styled.div`
     display: flex;
-    /* background: black; */
-    /* padding: 5px 20px; */
-    /* margin-left: 30px; */
-    /* justify-content: center; */
     flex: 0.4;
 `
 
 export const ResumeImage = styled.img`
     height: 400px;
     width: 300px;
-    /* border-radius: 10px; */
-    /* align-self: flex-start; */
 `
 
 export const ResumeWorkEducationContainer = styled.div`
@@ -51,9 +44,7 @@ export const ResumeWorkEducationContainer = styled.div`
 `
 
 export const ResumeDetailsContainer = styled.div`
-    /* background: red; */
     flex: 0.6;
-    /* height: 10vh; */
     width: 100%;
 `
 
@@ -72,6 +63,11 @@ export const ResumeWorkDetailsContainer = styled.div`
 export const ResumeWorkDetailsTopContainer = styled.div`
     display: flex; 
     justify-content: space-between;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 `
 export const ResumeJobTitle = styled.h3``
 export const ResumeJobDates = styled.div`

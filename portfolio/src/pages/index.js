@@ -5,7 +5,6 @@ import { aboutMeData } from '../components/AboutMe/Data'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
-import Work from '../components/Work'
 import Contact from '../components/Contact'
 import Resume from '../components/Resume'
 
@@ -23,7 +22,6 @@ const Home = () => {
             <PagesContainer>
                 <AboutMe {...aboutMeData} />
                 <Projects />
-                {/* <Work /> */}
                 <Resume />
                 <Contact />
             </PagesContainer>
