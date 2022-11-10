@@ -3,7 +3,7 @@ import { FaTimes } from 'react-icons/fa'
 import { Link as LinkS } from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     z-index: 999;
