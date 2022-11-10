@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutMeContainer = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
     /* height: 90vh; */

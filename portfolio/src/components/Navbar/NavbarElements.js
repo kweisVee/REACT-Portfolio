@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
     /* background: ${({ scrollNav }) => (scrollNav ? '#F2E5D9' : '#de5542')}; */
