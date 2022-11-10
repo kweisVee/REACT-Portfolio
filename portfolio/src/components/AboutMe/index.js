@@ -9,7 +9,6 @@ import {
     AboutMeIntroContainer,
     AboutMeIntroName,
     AboutMeIntro,
-    AboutMeName,
     AboutMeOccupation,
     AboutMeBottom,
     AboutMeBottomTempContainer,
@@ -30,7 +29,6 @@ const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
                     <AboutMeImgContainer>
                         <AboutMeImgBorder>
                             <AboutMeImage alt="AboutMeImage" src={img} />
-                            {/* HELLO */}
                         </AboutMeImgBorder>
                     </AboutMeImgContainer>
                     <AboutMeIntroContainer>
