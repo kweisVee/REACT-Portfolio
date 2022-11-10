@@ -5,9 +5,10 @@ export const AboutMeContainer = styled.div`
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
     /* height: 90vh; */
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
     display: flex;
+    font-weight: 200;
     flex-direction: column;
     padding: 0px 200px;
     font-weight: 150;
