@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'); */
     font-family: 'Montserrat', sans-serif;
     /* height: 100vh; */
     width: 100%; 
