@@ -6,11 +6,13 @@ export const ContactContainer = styled.div`
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
+    height: 100vh;
     padding: 200px 30px;
     @media screen and (max-width: 970px) {
         flex-direction: column;
         gap: 50px;
         padding: 100px 30px;
+        height: 100%;
     }
 
     @media screen and (max-width: 540px) {

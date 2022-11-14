@@ -4,11 +4,21 @@ export const ResumeContainer = styled.div`
     background-color: white;
     padding: 40px 149px 40px 140px;
     display: flex;
+    height: 100vh;
     gap: 10px;
     flex-direction: column;
 
     @media screen and (max-width: 970px) {
+        height: 100%;
         padding: 40px 40px 40px 40px;
+    }
+
+    @media screen and (max-width: 460px) {
+        padding: 30px 30px 30px 30px;
+    }
+
+    @media screen and (max-width: 320px) {
+        padding: 20px 20px 20px 20px;
     }
 `
 
@@ -16,6 +26,10 @@ export const ResumeTitle = styled.h1`
     color: #d59c6e;
     font-weight: 700;
     font-size: 2.5rem;
+
+    @media screen and (max-width: 360px) {
+        font-size: 2rem;
+    }
 `
 export const ResumeBodyContainer = styled.div`
     display: flex;
@@ -34,6 +48,16 @@ export const ResumeImageContainer = styled.div`
 export const ResumeImage = styled.img`
     height: 400px;
     width: 300px;
+
+    @media screen and (max-width: 412px) {
+        height: 350px;
+        width: 250px;
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 350px;
+        width: 200px;
+    }
 `
 
 export const ResumeWorkEducationContainer = styled.div`
@@ -41,6 +65,10 @@ export const ResumeWorkEducationContainer = styled.div`
     flex-direction: column;
     gap: 30px;
     padding: 10px 0px 10px 30px;
+
+    @media screen and (max-width: 420px) {
+        padding: 5px 0px 5px 10px;
+    }
 `
 
 export const ResumeDetailsContainer = styled.div`
@@ -51,6 +79,10 @@ export const ResumeDetailsContainer = styled.div`
 export const ResumeDetailsTypeTitle = styled.h2`
     margin-bottom: 30px;
     font-size: 2rem;
+
+    @media screen and (max-width: 360px) {
+        font-size: 1.5rem;
+    }
 `
 
 export const ResumeWorkDetailsContainer = styled.div`

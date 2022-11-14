@@ -5,38 +5,18 @@ export const ProjectsContainer = styled.div`
    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
     /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'); */
     font-family: 'Montserrat', sans-serif;
-    /* height: 100vh; */
-    width: 100%; 
+    height: 100vh;
+    width: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #F2E5D9;
     padding: 40px 30px;
 
-    /* padding: 100px 200px; */
-    /* @media screen and (max-width: 1080px) {
-        height: 108vh;
+    @media screen and (max-width: 912px) {
+        height: 100%;
     }
-
-    @media screen and (max-width: 1080px) {
-        height: 125vh;
-    }
-
-    @media screen and (max-width: 970px) {
-        height: 150vh;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 190vh;
-    }
-
-    @media screen and (max-width: 540px) {
-        height: 240vh;
-    }
-
-    @media screen and (max-width: 280px) {
-        height: 260vh;
-    } */
 `
 
 export const ProjectsTitleContainer = styled.div``

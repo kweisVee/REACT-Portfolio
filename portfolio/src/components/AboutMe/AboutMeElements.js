@@ -4,15 +4,15 @@ export const AboutMeContainer = styled.div`
     /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
     font-family: 'Montserrat', sans-serif;
     background: #de5542;
-    /* height: 90vh; */
-    height: 100%;
+    height: 100vh;
+    /* height: 100%; */
     width: 100%;
     display: flex;
     font-weight: 200;
     flex-direction: column;
     padding: 0px 200px;
     font-weight: 150;
-    height: 100%;
+    /* height: 100%; */
     padding: 80px 200px 140px 100px;
 
     @media screen and (max-width: 912px) {
@@ -22,7 +22,8 @@ export const AboutMeContainer = styled.div`
 
     @media screen and (max-width: 375px) {
         /* height: 89vh; */
-        padding: 0px 0px;
+        padding: 20px 0px;
+        height: 100%;
     } 
 `
 
