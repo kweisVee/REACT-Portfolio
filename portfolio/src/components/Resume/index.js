@@ -98,7 +98,7 @@ const Resume = () => {
                                 <ResumeWorkIcon><FaBuilding /></ResumeWorkIcon>De La Salle University - Manila
                             </ResumeWorkCompany>
                             <ResumeWorkDescription>
-                            Dean's Lister from 2018 to present, running for Latin Honors with a GPA of 3.7/4.0, and an active volunteer for For The Kids organization.
+                            Dean's Lister from 2018 to present, Magna Cum Laude with a GPA of 3.7/4.0, and an active volunteer for For The Kids organization.
                             </ResumeWorkDescription>
                         </ResumeWorkDetailsBottomContainer>
                         <hr></hr>
