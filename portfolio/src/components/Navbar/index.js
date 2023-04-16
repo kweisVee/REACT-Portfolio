@@ -12,7 +12,6 @@ import {
 } from './NavbarElements'
 
 const Navbar = ({ toggle }) => {
-
     const [scrollNav, setScrollNav] = useState(false)
     const changeNav = () => {
         if (window.scrollY >= 80) {
@@ -27,52 +26,66 @@ const Navbar = ({ toggle }) => {
     }, [])
 
     const toggleHome = () => {
-        scroll.scrollToTop();
-    };
+        scroll.scrollToTop()
+    }
 
     return (
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toggleHome}>KOREKWEIS</NavLogo>
+                <NavLogo to="/" onClick={toggleHome}>
+                    KOREKWEIS
+                </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80}
-                        >About Me</NavLinks>
+                        <NavLinks
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            About Me
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="projects"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80}
-                        >Projects</NavLinks>
+                        <NavLinks
+                            to="projects"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            Projects
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="resume"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80}
-                        >Work & Education</NavLinks>
+                        <NavLinks
+                            to="timeline"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            Timeline
+                        </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'
-                        offset={-80}
-                        >Message</NavLinks>
+                        <NavLinks
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}
+                        >
+                            Contact Me
+                        </NavLinks>
                     </NavItem>
                 </NavMenu>
             </NavbarContainer>

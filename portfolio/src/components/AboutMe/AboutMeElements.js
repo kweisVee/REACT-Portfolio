@@ -24,7 +24,7 @@ export const AboutMeContainer = styled.div`
         /* height: 89vh; */
         padding: 20px 0px;
         height: 100%;
-    } 
+    }
 `
 
 export const AboutMeTop = styled.div`
@@ -72,12 +72,6 @@ export const AboutMeImgBorder = styled.div`
         width: 230px;
     }
 
-    /* @media screen and (max-width: 414px) {
-        height: 210px;
-        width: 200px;
-        border: 3px solid #fff;
-    } */
-
     @media screen and (max-width: 375px) {
         height: 190px;
         width: 180px;
@@ -89,22 +83,11 @@ export const AboutMeImage = styled.img`
     height: 260px;
     width: 250px;
     border-radius: 50%;
-    /* align-self: center; */
-
-    /* @media screen and (max-width: 912px) {
-        height: 280px;
-        width: 270px;
-    } */
 
     @media screen and (max-width: 912px) {
         height: 210px;
         width: 200px;
     }
-
-    /* @media screen and (max-width: 414px) {
-        height: 180px;
-        width: 170px;
-    } */
 
     @media screen and (max-width: 375px) {
         height: 160px;
@@ -119,7 +102,7 @@ export const AboutMeIntroContainer = styled.div`
     font-size: 220%;
 
     @media screen and (max-width: 912px) {
-        font-size: 200%
+        font-size: 200%;
     }
 
     @media screen and (max-width: 688px) {

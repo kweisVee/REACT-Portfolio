@@ -2,16 +2,13 @@ import styled from 'styled-components'
 // import backgroundImg from '../../images/background.jpg'
 
 export const ProjectsContainer = styled.div`
-   /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap'); */
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F2E5D9;
+    background: #f2e5d9;
     padding: 40px 30px;
 
     @media screen and (max-width: 912px) {
@@ -49,7 +46,7 @@ export const ProjectsWrapper = styled.div`
 
 export const ProjectsCard = styled.div`
     background: #fff;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -67,18 +64,18 @@ export const ProjectsCard = styled.div`
 `
 
 export const ProjectsIcon = styled.img`
-    height: 160px; 
-    width: 160px; 
+    height: 160px;
+    width: 160px;
     margin-bottom: 10px;
 `
 
 export const ProjectName = styled.div`
     font-weight: 600;
-    font-size: 1rem; 
+    font-size: 1rem;
     margin-bottom: 10px;
 `
 
 export const ProjectDesc = styled.p`
-    font-size: 12px; 
+    font-size: 12px;
     text-align: center;
 `

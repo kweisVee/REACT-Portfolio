@@ -6,8 +6,7 @@ import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
 import Contact from '../components/Contact'
-import Resume from '../components/Resume'
-
+import Timeline from '../components/Timeline'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -22,7 +21,7 @@ const Home = () => {
             <PagesContainer>
                 <AboutMe {...aboutMeData} />
                 <Projects />
-                <Resume />
+                <Timeline />
                 <Contact />
             </PagesContainer>
         </>
