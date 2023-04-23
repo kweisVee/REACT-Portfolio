@@ -5,7 +5,6 @@ import {
     TimelineContainer,
     TimelineTitle,
     VerticalTimelineContainer,
-    TimelineIcon,
     VerticalElementTitle,
     VerticalElementCompany,
     VerticalElementAbout,
@@ -41,13 +40,9 @@ const Timeline = () => {
                                 }
                                 icon={
                                     isWorkIcon ? (
-                                        <TimelineIcon>
-                                            <FaDesktop />
-                                        </TimelineIcon>
+                                        <FaDesktop color="#ffff" />
                                     ) : (
-                                        <TimelineIcon>
-                                            <FaGraduationCap />
-                                        </TimelineIcon>
+                                        <FaGraduationCap color="#ffff" />
                                     )
                                 }
                                 contentStyle={

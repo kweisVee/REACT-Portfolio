@@ -25,9 +25,11 @@ export const VerticalTimelineContainer = styled.div`
     padding-top: 40px;
 `
 
-export const TimelineIcon = styled.span`
-    color: #ffff;
-`
+// export const FaDesktop = styled.image`
+//     color: #ffff;
+//     align-self: center;
+//     justify-content: center;
+// `
 export const VerticalElementTitle = styled.h3``
 export const VerticalElementCompany = styled.h5``
 export const VerticalElementAbout = styled.p``
