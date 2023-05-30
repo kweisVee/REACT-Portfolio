@@ -92,6 +92,7 @@ export const NavLinks = styled(LinkS)`
     &.active {
         /* border-bottom: 3px solid #3f5371; */
         background-color: #3f5371;
+        border-radius: 8px;
     }
 
     /* &:hover {

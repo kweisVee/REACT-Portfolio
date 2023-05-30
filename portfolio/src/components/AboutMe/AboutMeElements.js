@@ -3,25 +3,23 @@ import styled from 'styled-components'
 export const AboutMeContainer = styled.div`
     /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
     font-family: 'Montserrat', sans-serif;
-    background: #de5542;
-    height: 100vh;
-    /* height: 100%; */
+    /* background: white; */
+    /* background: linear-gradient(130deg, #f8e9a1 60%, #ffff 50%); */
+    /* background: linear-gradient(150deg, #f8e9a1 40%, #ffff 40%); */
+    /* height: 90vh; */
     width: 100%;
     display: flex;
     font-weight: 200;
     flex-direction: column;
     padding: 0px 200px;
     font-weight: 150;
-    /* height: 100%; */
-    padding: 80px 200px 140px 100px;
+    padding: 80px 250px 140px 150px;
 
     @media screen and (max-width: 912px) {
         padding: 30px 40px;
-        /* height: 95vh; */
     }
 
     @media screen and (max-width: 375px) {
-        /* height: 89vh; */
         padding: 20px 0px;
         height: 100%;
     }
@@ -59,7 +57,9 @@ export const AboutMeImgBorder = styled.div`
     width: 280px;
     border-radius: 50%;
     padding: 12px;
-    border: 3px solid #fff;
+    /* border: 3px solid #fff; */
+    border: 3px solid #374785;
+    /* #374785 */
     align-items: center;
 
     /* @media screen and (max-width: 912px) {
@@ -98,8 +98,12 @@ export const AboutMeImage = styled.img`
 export const AboutMeIntroContainer = styled.div`
     display: flex;
     flex-direction: column;
-    color: #fff;
+    /* color: #a8d0e6; */
+    /* color: #7b9db0; */
+    color: #374785;
+    font-weight: 700;
     font-size: 220%;
+    /* padding-right: 100px; */
 
     @media screen and (max-width: 912px) {
         font-size: 200%;
@@ -120,14 +124,29 @@ export const AboutMeIntroContainer = styled.div`
 export const AboutMeIntroName = styled.div`
     display: flex;
 `
-export const AboutMeIntro = styled.p``
+export const AboutMeIntro = styled.p`
+    /* color: #374785; */
+    color: #f76c6c;
+    font-size: 190%;
+`
 export const AboutMeName = styled.p``
-export const AboutMeOccupation = styled.div``
+export const AboutMeOccupation = styled.div`
+    /* color: #f76c6c; */
+    /* color: #374785; */
+`
+export const AboutMeDescription = styled.p`
+    font-weight: 100;
+    font-size: 50%;
+    /* color: #374785; */
+    margin-top: 10px;
+`
 
 export const AboutMeBottom = styled.div`
     display: flex;
-    color: #fff;
+    /* color: black; */
+    color: white;
     text-align: right;
+    margin-right: 90px;
     justify-content: center;
 
     @media screen and (max-width: 912px) {
@@ -159,6 +178,8 @@ export const AboutMeBottomRight = styled.div`
     justify-content: space-around;
     gap: 50px;
     flex-grow: 1;
+    font-size: 15px;
+    font-weight: 100;
 
     @media screen and (max-width: 912px) {
         /* margin-top: 10px;
@@ -183,7 +204,7 @@ export const AboutMePhoneInfo = styled.div`
 export const AboutMePhoneInfoTitle = styled.div``
 export const AboutMePhoneInfoNumber = styled.div``
 
-export const AboutMeEmailInfo = styled.div``
+export const AboutMeEmailInfo = styled.p``
 
 export const AboutMeEmailInfoTitle = styled.div``
 export const AboutMeEmailInfoMail = styled.div``

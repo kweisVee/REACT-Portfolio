@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
-    background: #F2E5D9;
+    /* background: #F2E5D9; */
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
@@ -65,8 +65,8 @@ export const ContactFirstNameInput = styled.input`
     width: 100%;
     /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 export const ContactLastNameInput = styled.input`
     border: 0;
@@ -77,8 +77,8 @@ export const ContactLastNameInput = styled.input`
     width: 100%;
     /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactEmailInput = styled.input`
@@ -89,8 +89,8 @@ export const ContactEmailInput = styled.input`
     border-bottom: 1.5px solid #877f7d;
     /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactMessageInput = styled.textarea`
@@ -103,12 +103,12 @@ export const ContactMessageInput = styled.textarea`
     /* border-bottom: 1px solid #de5542; */
     /* background: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactMessageButton = styled.button`
-    width: 100%; 
+    width: 100%;
     background-color: #de5542;
     color: white;
     padding: 5px;

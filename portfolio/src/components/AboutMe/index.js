@@ -10,6 +10,7 @@ import {
     AboutMeIntroName,
     AboutMeIntro,
     AboutMeOccupation,
+    AboutMeDescription,
     AboutMeBottom,
     AboutMeBottomTempContainer,
     AboutMeBottomRight,
@@ -21,7 +22,15 @@ import {
     AboutMeEmailInfoMail,
 } from './AboutMeElements'
 
-const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
+const AboutMe = ({
+    img,
+    intro,
+    name,
+    occupation,
+    phone,
+    email,
+    description,
+}) => {
     return (
         <AboutMeContainer id="about">
             <AboutMeTop>
@@ -34,7 +43,8 @@ const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
                     <AboutMeIntroContainer>
                         <AboutMeIntroName>
                             <AboutMeIntro>
-                                {intro}
+                                {name}
+                                {/* {intro}
                                 <span
                                     style={{
                                         color: '#f7b26d',
@@ -43,15 +53,35 @@ const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
                                 >
                                     CHRISSY
                                 </span>
-                                .
+                                . */}
                             </AboutMeIntro>
                             {/* <AboutMeName>{name}</AboutMeName> */}
                         </AboutMeIntroName>
                         <AboutMeOccupation>{occupation}</AboutMeOccupation>
+                        <AboutMeDescription>{description}</AboutMeDescription>
+                        {/* <AboutMeBottomRight>
+                            <AboutMePhoneInfo>
+                                <AboutMePhoneInfoTitle>
+                                    Phone
+                                </AboutMePhoneInfoTitle>
+                                <AboutMePhoneInfoNumber>
+                                    {phone}
+                                </AboutMePhoneInfoNumber>
+                            </AboutMePhoneInfo>
+                            <AboutMeEmailInfo>
+                                <AboutMeEmailInfoTitle>
+                                    Email
+                                </AboutMeEmailInfoTitle>
+                                <AboutMeEmailInfoMail>
+                                    {email}
+                                </AboutMeEmailInfoMail>
+                            </AboutMeEmailInfo>
+                        </AboutMeBottomRight> */}
                     </AboutMeIntroContainer>
                 </AboutMeTopFirst>
             </AboutMeTop>
-            <AboutMeBottom>
+
+            {/* <AboutMeBottom>
                 <AboutMeBottomTempContainer></AboutMeBottomTempContainer>
                 <AboutMeBottomRight>
                     <AboutMePhoneInfo>
@@ -63,7 +93,7 @@ const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
                         <AboutMeEmailInfoMail>{email}</AboutMeEmailInfoMail>
                     </AboutMeEmailInfo>
                 </AboutMeBottomRight>
-            </AboutMeBottom>
+            </AboutMeBottom> */}
         </AboutMeContainer>
     )
 }
