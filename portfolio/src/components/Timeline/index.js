@@ -37,7 +37,7 @@ const Timeline = () => {
             <TimelineTitleContainer>
                 <TimelineTitleLine1></TimelineTitleLine1>
             </TimelineTitleContainer>
-            <TimelineTitle>My Experience</TimelineTitle>
+            <TimelineTitle>MY EXPERIENCE</TimelineTitle>
             <VerticalTimelineContainer>
                 <VerticalTimeline lineColor="#f4a055">
                     {timelineInfo.map((element) => {
