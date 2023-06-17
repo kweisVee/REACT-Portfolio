@@ -1,7 +1,8 @@
-import { NavBody, NavMenu, NavLinks } from './NavElements'
+import { NavContainer, NavMobileIcon, NavMenu, NavLinks } from './NavElements'
+import { FaBars } from 'react-icons/fa'
 import 'animate.css'
 
-const Nav = () => {
+const Nav = ({ toggle }) => {
     const items = [
         {
             name: 'About Me',
@@ -31,7 +32,10 @@ const Nav = () => {
     ]
 
     return (
-        <NavBody>
+        <NavContainer>
+            <NavMobileIcon onClick={toggle}>
+                <FaBars />
+            </NavMobileIcon>
             <NavMenu>
                 {items.map((item, index) => (
                     <NavLinks
@@ -47,7 +51,7 @@ const Nav = () => {
                     </NavLinks>
                 ))}
             </NavMenu>
-        </NavBody>
+        </NavContainer>
     )
 }
 

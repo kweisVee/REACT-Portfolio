@@ -26,8 +26,14 @@ export const ContactTitleContainer = styled.div`
     justify-content: center;
     gap: 10px;
 `
-export const ContactMeTitle = styled.h2``
-export const ContactH5 = styled.h5``
+export const ContactMeTitle = styled.div`
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #374785;
+`
+export const ContactH5 = styled.h3`
+    color: #374785;
+`
 
 export const ContactFormContainer = styled.form`
     background-color: white;
@@ -109,7 +115,8 @@ export const ContactMessageInput = styled.textarea`
 
 export const ContactMessageButton = styled.button`
     width: 100%;
-    background-color: #de5542;
+    /* background-color: #de5542; */
+    background-color: #f76c6c;
     color: white;
     padding: 5px;
     border: 0px;

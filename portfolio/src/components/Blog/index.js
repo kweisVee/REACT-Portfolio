@@ -6,19 +6,39 @@ import {
     BlogTitle,
     BlogArticlesContainer,
     BlogArticleBox,
+    BlogArticleHeader,
     BlogArticleTitle,
+    BlogArticleDate,
     BlogArticleSummary,
+    BlogMore,
+    BlogMoreText,
 } from './BlogElements'
 
 const Blog = () => {
     return (
         <BlogContainer id="blog">
-            <BlogTitle>My Thoughts...</BlogTitle>
+            <BlogTitle>BLOG</BlogTitle>
             <BlogArticlesContainer>
                 {blogInfo.map((element) => {
                     return (
                         <BlogArticleBox>
-                            <BlogArticleTitle>{element.title}</BlogArticleTitle>
+                            <BlogArticleHeader>
+                                <BlogArticleTitle>
+                                    {element.title}
+                                </BlogArticleTitle>
+                                <BlogArticleDate>
+                                    {element.date}
+                                </BlogArticleDate>
+                            </BlogArticleHeader>
+                            <hr
+                                style={{
+                                    marginTop: '10px',
+                                    marginBottom: '10px',
+                                    borderColor: '#6e68e2',
+                                    marginRight: '70%',
+                                    borderWidth: '0.5px',
+                                }}
+                            ></hr>
                             <BlogArticleSummary>
                                 {element.summary}
                             </BlogArticleSummary>
@@ -26,6 +46,9 @@ const Blog = () => {
                     )
                 })}
             </BlogArticlesContainer>
+            <BlogMore>
+                <BlogMoreText> Read more articles &#8594;</BlogMoreText>
+            </BlogMore>
         </BlogContainer>
     )
 }

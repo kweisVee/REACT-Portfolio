@@ -3,13 +3,12 @@ import { FaTimes } from 'react-icons/fa'
 import { Link as LinkS } from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
     font-family: 'Montserrat', sans-serif;
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #de5542;
+    background: #ffff;
     display: grid;
     align-items: center;
     top: 0;
@@ -20,7 +19,8 @@ export const SidebarContainer = styled.aside`
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: #374785;
+    font-weight: 100;
 `
 
 export const Icon = styled.div`
@@ -34,7 +34,8 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: #374785;
+    font-weight: 100;
 `
 
 export const SidebarMenu = styled.ul`
@@ -57,12 +58,36 @@ export const SidebarLink = styled(LinkS)`
     list-style: none;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #fff;
+    color: #374785;
+    font-weight: 100;
     cursor: pointer;
 
-    &:hover {
-        /* color: #f7a049; */
-        color: #3f5371;
+    /* &:hover {
+        text-decoration: underline;
         transition: 0.2s ease-in-out;
+    } */
+`
+
+export const SidebarText = styled.p`
+    display: inline-block;
+    position: relative;
+    /* color: #0087ca; */
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #374785;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 `

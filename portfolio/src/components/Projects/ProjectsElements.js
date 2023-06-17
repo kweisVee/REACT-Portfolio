@@ -4,12 +4,10 @@ import styled from 'styled-components'
 export const ProjectsContainer = styled.div`
     background: linear-gradient(150deg, #ffff 50%, #374785 50%);
     font-family: 'Montserrat', sans-serif;
-    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: #f2e5d9; */
     padding: 40px 30px;
 
     @media screen and (max-width: 912px) {
@@ -24,14 +22,6 @@ export const ProjectImg = styled.img`
 `
 
 export const ProjectsTitleContainer = styled.div``
-// export const ProjectsTitle = styled.div`
-//     font-weight: bold;
-//     font-size: 30px;
-//     margin-bottom: 30px;
-//     align-items: center;
-//     text-align: center;
-//     color: #3f5371;
-// `
 
 export const ProjectsWrapper = styled.div`
     max-width: 1100px;

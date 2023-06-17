@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { PagesContainer } from './PagesElement'
 import AboutMe from '../components/AboutMe'
 import { aboutMeData } from '../components/AboutMe/Data'
-import Navbar from '../components/Navbar'
 import Nav from '../components/Nav'
 import Projects from '../components/Projects'
 import Sidebar from '../components/Sidebar'
@@ -20,7 +19,7 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             {/* <Navbar toggle={toggle} /> */}
-            <Nav />
+            <Nav toggle={toggle} />
             <PagesContainer>
                 <AboutMe {...aboutMeData} />
                 <Projects />

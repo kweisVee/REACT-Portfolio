@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 
-export const NavBody = styled.nav`
+export const NavContainer = styled.nav`
     font-family: 'Montserrat', sans-serif;
     background: white;
     height: 80px;
@@ -18,6 +18,21 @@ export const NavBody = styled.nav`
     }
 `
 
+export const NavMobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 850px) {
+        color: #374785;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+`
+
 export const NavMenu = styled.div`
     background-color: white;
     display: flex;
@@ -26,6 +41,10 @@ export const NavMenu = styled.div`
     height: 100%;
     width: 100%;
     border-bottom: 1px solid #eee;
+
+    @media screen and (max-width: 850px) {
+        display: none;
+    }
 `
 
 export const NavLinks = styled(Link)`
