@@ -33,9 +33,15 @@ export const TimelineTitle = styled.div`
     color: #ffff;
     text-align: center;
     font-weight: 200;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-left: 20px;
     margin-right: 20px;
+    @media screen and (max-width: 864px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 414px) {
+        font-size: 3rem;
+    }
 `
 
 export const VerticalTimelineContainer = styled.div`
@@ -50,5 +56,11 @@ export const VerticalElementDate = styled.span`
     color: #ffff;
     &.coloredDate {
         color: #3f5371;
+    }
+
+    @media screen and (max-width: 1169px) {
+        &.coloredDate {
+            color: #ffff;
+        }
     }
 `

@@ -18,6 +18,9 @@ export const ContactContainer = styled.div`
     @media screen and (max-width: 540px) {
         padding: 100px 10px;
     }
+    @media screen and (max-width: 414px) {
+        font-size: 3rem;
+    }
 `
 export const ContactTitleContainer = styled.div`
     display: flex;
@@ -30,9 +33,15 @@ export const ContactMeTitle = styled.div`
     font-size: 5rem;
     font-weight: lighter;
     color: #374785;
+    @media screen and (max-width: 864px) {
+        font-size: 4rem;
+    }
 `
 export const ContactH5 = styled.h3`
     color: #374785;
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
+    }
 `
 
 export const ContactFormContainer = styled.form`
@@ -69,7 +78,6 @@ export const ContactFirstNameInput = styled.input`
     padding-bottom: 5px;
     border-bottom: 1.5px solid #877f7d;
     width: 100%;
-    /* background-color: #ebccab; */
     ::placeholder {
         color: #444444;
     }
@@ -77,11 +85,9 @@ export const ContactFirstNameInput = styled.input`
 export const ContactLastNameInput = styled.input`
     border: 0;
     outline: 0;
-    /* width: 180px; */
     padding-bottom: 5px;
     border-bottom: 1.5px solid #877f7d;
     width: 100%;
-    /* background-color: #ebccab; */
     ::placeholder {
         color: #444444;
     }

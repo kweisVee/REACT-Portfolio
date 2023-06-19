@@ -15,13 +15,17 @@ import {
 } from './BlogElements'
 
 const Blog = () => {
+    const goToArticle = (element) => {
+        window.location.assign(element.link)
+    }
+
     return (
         <BlogContainer id="blog">
             <BlogTitle>BLOG</BlogTitle>
             <BlogArticlesContainer>
                 {blogInfo.map((element) => {
                     return (
-                        <BlogArticleBox>
+                        <BlogArticleBox onClick={() => goToArticle(element)}>
                             <BlogArticleHeader>
                                 <BlogArticleTitle>
                                     {element.title}

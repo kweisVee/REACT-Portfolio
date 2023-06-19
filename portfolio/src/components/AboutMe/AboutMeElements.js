@@ -1,12 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutMeContainer = styled.div`
-    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); */
     font-family: 'Montserrat', sans-serif;
-    /* background: white; */
-    /* background: linear-gradient(130deg, #f8e9a1 60%, #ffff 50%); */
-    /* background: linear-gradient(150deg, #f8e9a1 40%, #ffff 40%); */
-    /* height: 90vh; */
     width: 100%;
     display: flex;
     font-weight: 200;
@@ -57,15 +52,8 @@ export const AboutMeImgBorder = styled.div`
     width: 280px;
     border-radius: 50%;
     padding: 12px;
-    /* border: 3px solid #fff; */
     border: 3px solid #374785;
-    /* #374785 */
     align-items: center;
-
-    /* @media screen and (max-width: 912px) {
-        height: 310px;
-        width: 300px;
-    } */
 
     @media screen and (max-width: 912px) {
         height: 240px;
@@ -98,12 +86,9 @@ export const AboutMeImage = styled.img`
 export const AboutMeIntroContainer = styled.div`
     display: flex;
     flex-direction: column;
-    /* color: #a8d0e6; */
-    /* color: #7b9db0; */
     color: #374785;
     font-weight: 700;
     font-size: 220%;
-    /* padding-right: 100px; */
 
     @media screen and (max-width: 912px) {
         font-size: 200%;
@@ -125,25 +110,19 @@ export const AboutMeIntroName = styled.div`
     display: flex;
 `
 export const AboutMeIntro = styled.p`
-    /* color: #374785; */
     color: #f76c6c;
     font-size: 190%;
 `
 export const AboutMeName = styled.p``
-export const AboutMeOccupation = styled.div`
-    /* color: #f76c6c; */
-    /* color: #374785; */
-`
+export const AboutMeOccupation = styled.div``
 export const AboutMeDescription = styled.p`
     font-weight: 100;
     font-size: 50%;
-    /* color: #374785; */
     margin-top: 10px;
 `
 
 export const AboutMeBottom = styled.div`
     display: flex;
-    /* color: black; */
     color: white;
     text-align: right;
     margin-right: 90px;
@@ -182,20 +161,11 @@ export const AboutMeBottomRight = styled.div`
     font-weight: 100;
 
     @media screen and (max-width: 912px) {
-        /* margin-top: 10px;
-        text-align: center; */
         margin-top: 10px;
         text-align: center;
         flex-direction: column;
         padding-bottom: 10px;
     }
-
-    /* @media screen and (max-width: 688px) {
-        margin-top: 10px;
-        text-align: center;
-        flex-direction: column;
-        padding-bottom: 10px;
-    } */
 `
 export const AboutMePhoneInfo = styled.div`
     display: flex;

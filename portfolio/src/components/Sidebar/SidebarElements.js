@@ -61,17 +61,11 @@ export const SidebarLink = styled(LinkS)`
     color: #374785;
     font-weight: 100;
     cursor: pointer;
-
-    /* &:hover {
-        text-decoration: underline;
-        transition: 0.2s ease-in-out;
-    } */
 `
 
 export const SidebarText = styled.p`
     display: inline-block;
     position: relative;
-    /* color: #0087ca; */
 
     &::after {
         content: '';

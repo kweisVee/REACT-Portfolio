@@ -11,26 +11,9 @@ import {
     AboutMeIntro,
     AboutMeOccupation,
     AboutMeDescription,
-    AboutMeBottom,
-    AboutMeBottomTempContainer,
-    AboutMeBottomRight,
-    AboutMePhoneInfo,
-    AboutMePhoneInfoTitle,
-    AboutMePhoneInfoNumber,
-    AboutMeEmailInfo,
-    AboutMeEmailInfoTitle,
-    AboutMeEmailInfoMail,
 } from './AboutMeElements'
 
-const AboutMe = ({
-    img,
-    intro,
-    name,
-    occupation,
-    phone,
-    email,
-    description,
-}) => {
+const AboutMe = ({ img, name, occupation, description }) => {
     return (
         <AboutMeContainer id="about">
             <AboutMeTop>
@@ -42,58 +25,13 @@ const AboutMe = ({
                     </AboutMeImgContainer>
                     <AboutMeIntroContainer>
                         <AboutMeIntroName>
-                            <AboutMeIntro>
-                                {name}
-                                {/* {intro}
-                                <span
-                                    style={{
-                                        color: '#f7b26d',
-                                        fontWeight: 700,
-                                    }}
-                                >
-                                    CHRISSY
-                                </span>
-                                . */}
-                            </AboutMeIntro>
-                            {/* <AboutMeName>{name}</AboutMeName> */}
+                            <AboutMeIntro>{name}</AboutMeIntro>
                         </AboutMeIntroName>
                         <AboutMeOccupation>{occupation}</AboutMeOccupation>
                         <AboutMeDescription>{description}</AboutMeDescription>
-                        {/* <AboutMeBottomRight>
-                            <AboutMePhoneInfo>
-                                <AboutMePhoneInfoTitle>
-                                    Phone
-                                </AboutMePhoneInfoTitle>
-                                <AboutMePhoneInfoNumber>
-                                    {phone}
-                                </AboutMePhoneInfoNumber>
-                            </AboutMePhoneInfo>
-                            <AboutMeEmailInfo>
-                                <AboutMeEmailInfoTitle>
-                                    Email
-                                </AboutMeEmailInfoTitle>
-                                <AboutMeEmailInfoMail>
-                                    {email}
-                                </AboutMeEmailInfoMail>
-                            </AboutMeEmailInfo>
-                        </AboutMeBottomRight> */}
                     </AboutMeIntroContainer>
                 </AboutMeTopFirst>
             </AboutMeTop>
-
-            {/* <AboutMeBottom>
-                <AboutMeBottomTempContainer></AboutMeBottomTempContainer>
-                <AboutMeBottomRight>
-                    <AboutMePhoneInfo>
-                        <AboutMePhoneInfoTitle>Phone</AboutMePhoneInfoTitle>
-                        <AboutMePhoneInfoNumber>{phone}</AboutMePhoneInfoNumber>
-                    </AboutMePhoneInfo>
-                    <AboutMeEmailInfo>
-                        <AboutMeEmailInfoTitle>Email</AboutMeEmailInfoTitle>
-                        <AboutMeEmailInfoMail>{email}</AboutMeEmailInfoMail>
-                    </AboutMeEmailInfo>
-                </AboutMeBottomRight>
-            </AboutMeBottom> */}
         </AboutMeContainer>
     )
 }

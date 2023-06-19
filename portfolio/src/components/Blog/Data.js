@@ -1,9 +1,10 @@
 export const blogInfo = [
     {
         id: 1,
-        title: 'Starting off as a Software Engineer',
-        date: 'August 1, 2023',
+        title: 'Journey to Becoming a Software Engineer',
+        date: 'June 19, 2023',
         summary: '200 applications, 2 interviews, and one offer.',
+        link: 'https://github.com/kweisVee/Articles/blob/main/Becoming_a_software_engineer.md',
     },
     {
         id: 2,
