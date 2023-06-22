@@ -14,10 +14,10 @@ export const AboutMeContainer = styled.div`
         padding: 30px 40px;
     }
 
-    @media screen and (max-width: 375px) {
+    /* @media screen and (max-width: 375px) {
         padding: 20px 0px;
         height: 100%;
-    }
+    } */
 `
 
 export const AboutMeTop = styled.div`
@@ -63,7 +63,7 @@ export const AboutMeImgBorder = styled.div`
     @media screen and (max-width: 375px) {
         height: 190px;
         width: 180px;
-        border: 3px solid #fff;
+        border: 3px solid #374785;
     }
 `
 

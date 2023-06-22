@@ -8,7 +8,7 @@ export const TimelineContainer = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 912px) {
-        padding: 40px 20px 40px 40px;
+        padding: 40px 50px 40px 40px;
     }
 `
 
@@ -41,6 +41,9 @@ export const TimelineTitle = styled.div`
     }
     @media screen and (max-width: 414px) {
         font-size: 3rem;
+    }
+    @media screen and (max-width: 912px) {
+        align-self: center;
     }
 `
 
