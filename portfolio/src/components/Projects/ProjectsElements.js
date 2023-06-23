@@ -19,6 +19,9 @@ export const ProjectImg = styled.img`
     max-width: 80%;
     height: auto;
     border-radius: 20px;
+    @media screen and (max-width: 912px) {
+        max-width: 90%;
+    }
 `
 
 export const ProjectsTitleContainer = styled.div``
