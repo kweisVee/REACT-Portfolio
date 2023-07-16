@@ -8,10 +8,11 @@ export const blogInfo = [
     },
     {
         id: 2,
-        title: "Tech Stacks to Learn when you're just starting",
-        date: 'August 1, 2023',
+        title: 'What are Materialized Views?',
+        date: 'July 16, 2023',
         summary:
-            'Deciding on a tech stack to learn is difficult, but here are the top 3 tech stacks that I started learning when I was starting as a software developer.',
+            "I've come across materialized views for the first time in my career. In order to understand it further, I wrote about it and hopefully this can further help another person in understanding the concept of Views and Materialized Views much better.",
+        link: 'https://github.com/kweisVee/Articles/blob/main/materialized_views.md',
     },
     {
         id: 3,
