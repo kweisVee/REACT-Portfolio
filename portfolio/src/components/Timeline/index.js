@@ -1,13 +1,16 @@
 import React from 'react'
 import { FaDesktop, FaGraduationCap } from 'react-icons/fa'
-import timelineInfo from './timelineInfo'
+import timelineInfo from './Data'
 import {
     TimelineContainer,
+    TimelineTitleContainer,
+    TimelineTitleLine1,
     TimelineTitle,
     VerticalTimelineContainer,
     VerticalElementTitle,
     VerticalElementCompany,
     VerticalElementAbout,
+    VerticalElementDate,
 } from './TimelineElements'
 import {
     VerticalTimeline,
@@ -15,24 +18,42 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 
+const generateDateClassname = (element) => {
+    if (element.coloredDate) {
+        return 'coloredDate'
+    } else {
+        return 'whiteDate'
+    }
+}
+
 const Timeline = () => {
-    let workIconStyles = { background: '#3f5371' }
-    let schoolIconStyles = { background: '#f7b26d' }
-    let workContentStyles = { background: '#3f5371', color: 'white' }
-    let schoolContentStyles = { background: '#f7b26d', color: 'white' }
+    let workIconStyles = { background: '#f76c6c' }
+    let schoolIconStyles = { background: '#3f5371' }
+    let workContentStyles = { background: '#f76c6c', color: 'white' }
+    let schoolContentStyles = { background: '#3f5371', color: 'white' }
 
     return (
         <TimelineContainer id="timeline">
-            <TimelineTitle>My Timeline</TimelineTitle>
+            <TimelineTitleContainer>
+                <TimelineTitleLine1></TimelineTitleLine1>
+            </TimelineTitleContainer>
+            <TimelineTitle>MY EXPERIENCE</TimelineTitle>
             <VerticalTimelineContainer>
-                <VerticalTimeline lineColor="#9eafb6">
+                <VerticalTimeline lineColor="#f4a055">
                     {timelineInfo.map((element) => {
                         let isWorkIcon = element.icon === 'work'
                         return (
                             <VerticalTimelineElement
                                 key={element.id}
-                                date={element.date}
-                                dateClassName="date"
+                                date={
+                                    <VerticalElementDate
+                                        className={generateDateClassname(
+                                            element
+                                        )}
+                                    >
+                                        {element.date}
+                                    </VerticalElementDate>
+                                }
                                 iconStyle={
                                     isWorkIcon
                                         ? workIconStyles
@@ -52,8 +73,8 @@ const Timeline = () => {
                                 }
                                 contentArrowStyle={
                                     isWorkIcon
-                                        ? { borderRight: '7px solid #3f5371' }
-                                        : { borderRight: '7px solid #f7b26d' }
+                                        ? { borderRight: '7px solid #f76c6c' }
+                                        : { borderRight: '7px solid #3f5371' }
                                 }
                             >
                                 <VerticalElementTitle>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
-    background: #F2E5D9;
+    /* background: #F2E5D9; */
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
@@ -18,6 +18,9 @@ export const ContactContainer = styled.div`
     @media screen and (max-width: 540px) {
         padding: 100px 10px;
     }
+    @media screen and (max-width: 414px) {
+        font-size: 3rem;
+    }
 `
 export const ContactTitleContainer = styled.div`
     display: flex;
@@ -26,8 +29,20 @@ export const ContactTitleContainer = styled.div`
     justify-content: center;
     gap: 10px;
 `
-export const ContactMeTitle = styled.h2``
-export const ContactH5 = styled.h5``
+export const ContactMeTitle = styled.div`
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #374785;
+    @media screen and (max-width: 864px) {
+        font-size: 4rem;
+    }
+`
+export const ContactH5 = styled.h3`
+    color: #374785;
+    @media screen and (max-width: 414px) {
+        font-size: 1rem;
+    }
+`
 
 export const ContactFormContainer = styled.form`
     background-color: white;
@@ -63,22 +78,19 @@ export const ContactFirstNameInput = styled.input`
     padding-bottom: 5px;
     border-bottom: 1.5px solid #877f7d;
     width: 100%;
-    /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 export const ContactLastNameInput = styled.input`
     border: 0;
     outline: 0;
-    /* width: 180px; */
     padding-bottom: 5px;
     border-bottom: 1.5px solid #877f7d;
     width: 100%;
-    /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactEmailInput = styled.input`
@@ -89,8 +101,8 @@ export const ContactEmailInput = styled.input`
     border-bottom: 1.5px solid #877f7d;
     /* background-color: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactMessageInput = styled.textarea`
@@ -103,13 +115,14 @@ export const ContactMessageInput = styled.textarea`
     /* border-bottom: 1px solid #de5542; */
     /* background: #ebccab; */
     ::placeholder {
-       color: #444444;
-   }
+        color: #444444;
+    }
 `
 
 export const ContactMessageButton = styled.button`
-    width: 100%; 
-    background-color: #de5542;
+    width: 100%;
+    /* background-color: #de5542; */
+    background-color: #f76c6c;
     color: white;
     padding: 5px;
     border: 0px;

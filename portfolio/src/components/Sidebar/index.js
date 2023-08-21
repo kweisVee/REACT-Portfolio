@@ -6,6 +6,7 @@ import {
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
+    SidebarText,
 } from './SidebarElements'
 // import { FaBars } from 'react-icons/fa'
 
@@ -18,16 +19,19 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>
-                        About Me
+                        <SidebarText>About Me</SidebarText>
                     </SidebarLink>
                     <SidebarLink to="projects" onClick={toggle}>
-                        Projects
+                        <SidebarText>Projects</SidebarText>
                     </SidebarLink>
-                    <SidebarLink to="resume" onClick={toggle}>
-                        Work & Education
+                    <SidebarLink to="timeline" onClick={toggle}>
+                        <SidebarText>Experience</SidebarText>
+                    </SidebarLink>
+                    <SidebarLink to="blog" onClick={toggle}>
+                        <SidebarText>Blog</SidebarText>
                     </SidebarLink>
                     <SidebarLink to="contact" onClick={toggle}>
-                        Message
+                        <SidebarText>Contact</SidebarText>
                     </SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>

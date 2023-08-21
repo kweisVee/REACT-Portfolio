@@ -10,18 +10,10 @@ import {
     AboutMeIntroName,
     AboutMeIntro,
     AboutMeOccupation,
-    AboutMeBottom,
-    AboutMeBottomTempContainer,
-    AboutMeBottomRight,
-    AboutMePhoneInfo,
-    AboutMePhoneInfoTitle,
-    AboutMePhoneInfoNumber,
-    AboutMeEmailInfo,
-    AboutMeEmailInfoTitle,
-    AboutMeEmailInfoMail,
+    AboutMeDescription,
 } from './AboutMeElements'
 
-const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
+const AboutMe = ({ img, name, occupation, description }) => {
     return (
         <AboutMeContainer id="about">
             <AboutMeTop>
@@ -33,37 +25,13 @@ const AboutMe = ({ img, intro, name, occupation, phone, email }) => {
                     </AboutMeImgContainer>
                     <AboutMeIntroContainer>
                         <AboutMeIntroName>
-                            <AboutMeIntro>
-                                {intro}
-                                <span
-                                    style={{
-                                        color: '#f7b26d',
-                                        fontWeight: 700,
-                                    }}
-                                >
-                                    CHRISSY
-                                </span>
-                                .
-                            </AboutMeIntro>
-                            {/* <AboutMeName>{name}</AboutMeName> */}
+                            <AboutMeIntro>{name}</AboutMeIntro>
                         </AboutMeIntroName>
                         <AboutMeOccupation>{occupation}</AboutMeOccupation>
+                        <AboutMeDescription>{description}</AboutMeDescription>
                     </AboutMeIntroContainer>
                 </AboutMeTopFirst>
             </AboutMeTop>
-            <AboutMeBottom>
-                <AboutMeBottomTempContainer></AboutMeBottomTempContainer>
-                <AboutMeBottomRight>
-                    <AboutMePhoneInfo>
-                        <AboutMePhoneInfoTitle>Phone</AboutMePhoneInfoTitle>
-                        <AboutMePhoneInfoNumber>{phone}</AboutMePhoneInfoNumber>
-                    </AboutMePhoneInfo>
-                    <AboutMeEmailInfo>
-                        <AboutMeEmailInfoTitle>Email</AboutMeEmailInfoTitle>
-                        <AboutMeEmailInfoMail>{email}</AboutMeEmailInfoMail>
-                    </AboutMeEmailInfo>
-                </AboutMeBottomRight>
-            </AboutMeBottom>
         </AboutMeContainer>
     )
 }
