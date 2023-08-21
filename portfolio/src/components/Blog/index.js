@@ -19,6 +19,10 @@ const Blog = () => {
         window.location.assign(element.link)
     }
 
+    const goToArticlesPage = () => {
+        window.location.assign('https://dev.to/kweisvee')
+    }
+
     return (
         <BlogContainer id="blog">
             <BlogTitle>BLOG</BlogTitle>
@@ -51,7 +55,9 @@ const Blog = () => {
                 })}
             </BlogArticlesContainer>
             <BlogMore>
-                <BlogMoreText> Read more articles &#8594;</BlogMoreText>
+                <BlogMoreText onClick={() => goToArticlesPage()}>
+                    Read more articles &#8594;
+                </BlogMoreText>
             </BlogMore>
         </BlogContainer>
     )
